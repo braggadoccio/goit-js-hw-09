@@ -8,7 +8,8 @@ const startButton = document.querySelector('[data-start]');
 const stopButton = document.querySelector('[data-stop]');
 
 let timerId = null;
-startButton.disabled = true;
+startButton.disabled = false;
+stopButton.disabled = true;
 
 startButton.addEventListener('click', onStartButtonClick);
 stopButton.addEventListener('click', onStopButtonClick);

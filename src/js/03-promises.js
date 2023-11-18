@@ -26,7 +26,7 @@ function handleSubmit(event) {
   let delayValue = Number(delayElement.value);
 
   for (let i = 1; i <= amountElement.value; i++) {
-    createPromise(2, 1500)
+    createPromise(i, delayValue)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
